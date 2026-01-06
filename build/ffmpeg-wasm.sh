@@ -13,21 +13,21 @@ CONF_FLAGS=(
   -I$INSTALL_DIR/include 
   -L$INSTALL_DIR/lib 
   -Llibavcodec 
-  -Llibavdevice 
+  # -Llibavdevice     <-- REMOVED (Video/Device)
   -Llibavfilter 
   -Llibavformat 
   -Llibavutil 
-  -Llibpostproc 
+  # -Llibpostproc     <-- REMOVED (Video Post-processing)
   -Llibswresample 
-  -Llibswscale 
+  # -Llibswscale      <-- REMOVED (Video Scaling)
   -lavcodec 
-  -lavdevice 
+  # -lavdevice        <-- REMOVED
   -lavfilter 
   -lavformat 
   -lavutil 
-  -lpostproc 
+  # -lpostproc        <-- REMOVED
   -lswresample 
-  -lswscale 
+  # -lswscale         <-- REMOVED
   -Wno-deprecated-declarations 
   $LDFLAGS 
   -sENVIRONMENT=worker
